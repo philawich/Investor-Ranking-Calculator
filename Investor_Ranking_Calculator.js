@@ -21,4 +21,14 @@ function totalAssets() {
 
 function totalDebt() {
     
+    let valueOfDebt = 0
+    let debtCounted = 1
+    let debtIdentified = parseInt(readline.question('What is the value of debt '+ debtCounted++ + '?'));
+
+    while(debtIdentified>0) {
+        valueOfDebt = valueOfDebt += debtIdentified
+        debtIdentified = parseInt(readline.question('What is the value of debt '+ debtCounted++ + '?'));
+    }
+    console.log(valueOfDebt)
+    return valueOfDebt
 }
