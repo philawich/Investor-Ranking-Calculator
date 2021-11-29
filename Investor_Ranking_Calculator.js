@@ -18,3 +18,7 @@ function totalAssets() {
     console.log(totalValueOfAssets)
     return totalValueOfAssets;
 }
+
+function totalDebt() {
+    
+}
