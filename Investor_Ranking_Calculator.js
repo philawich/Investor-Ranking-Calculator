@@ -34,5 +34,18 @@ function totalDebt() {
 }
 
 function calculateInvestorRanking(investmentAmount, annualIncome, assets, debts) {
+
+    let investmentRanking 
+    let difference = assets - debts
     
+    if (debts > assets) {
+        investmentRanking = "0. This investor is clearly broke!"
+    } else if (difference < investmentAmount) {
+        investmentRanking = "0. They clearly don't have the financial assets to make this kind of investment!"
+    } else if (difference > investmentAmount) {
+        investmentRanking = (assets - debts - investmentAmount)
+    } else {
+        investmentRanking = annualIncome
+    }
+    return investmentRanking
 }
