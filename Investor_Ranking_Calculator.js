@@ -32,3 +32,7 @@ function totalDebt() {
     console.log(valueOfDebt)
     return valueOfDebt
 }
+
+function calculateInvestorRanking(investmentAmount, annualIncome, assets, debts) {
+    
+}
