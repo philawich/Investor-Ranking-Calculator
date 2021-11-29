@@ -49,3 +49,11 @@ function calculateInvestorRanking(investmentAmount, annualIncome, assets, debts)
     }
     return investmentRanking
 }
+
+let investmentAmount = readline.question('How much is the proposed investment? ');
+let annualIncome = readline.question('What is the annual income of the proposed investor? ');
+let assets = totalAssets();
+let debts = totalDebt();
+let investorScore = calculateInvestorRanking(investmentAmount, annualIncome, assets, debts);
+
+console.log('The investor score is ' + investorScore);
